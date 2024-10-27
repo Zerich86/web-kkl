@@ -1,0 +1,610 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === SS FILE === -->
+    <link rel="stylesheet" href="style.css">
+    <title>Kelompok 3</title>
+
+</head>
+<body onload="initClock">
+
+
+ 
+
+  
+
+
+
+    <!-- Header Start -->
+    <header>
+        <!-- Profile -->
+        <div class="Profile">
+            <img src="img/IMG_6070.JPG" alt="" >
+            <h1>Kelompok 3</h1>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+
+
+
+    
+
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <li><a href="#home" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#about" class="active"><i class="fa-solid fa-user"></i>About</a></li>
+                <li><a href="#portofolio" class="active"><i class="fa-solid fa-briefcase"></i>Kunjungan KKL</a></li>
+                <li><a href="#service" class="active"><i class="fa-solid fa-server"></i>Industri</a></li>
+                <li><a href="#contact" class="active"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; Copyright 2024 <br>Designed By <a href="https://restu.xyz" target="_blank">Kelompok 3</a></p>
+
+        </div>
+
+
+    </header>
+
+    <!-- Mobile Nav Toggle -->
+    <i class="fa-solid fa-bars" id="MenuBtn"></i>
+    <!-- Header End-->
+
+
+
+    <!-- All Body Content-->
+    <main>
+        <!-- Home Section Start -->
+        <section id="home">
+            <div class="home-row">
+                <h1>Hi Welcome <br>To My Website</h1>
+                <p> <span class="auto-input"></span></p>
+            </div>
+
+
+<div class="datetime">
+
+  <div id="clock"></div>
+  <div id="date"></div>
+  <script>
+    function updateClock() {
+      var now = new Date();
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      var seconds = now.getSeconds();
+      var day = now.getDate();
+      var month = now.getMonth() + 1; // Note: Month is zero-based
+      var year = now.getFullYear();
+  
+      hours = hours % 12 || 12; // Convert to 12-hour format
+      var period = hours < 12 ? "AM" : "PM";
+  
+      var timeString = hours + ":" + pad(minutes) + ":" + pad(seconds) + " " + period;
+      var dateString = day + "/" + month + "/" + year;
+  
+      document.getElementById("clock").innerHTML = timeString;
+      document.getElementById("date").innerHTML = dateString;
+    }
+  
+    function pad(number) {
+      return (number < 10 ? '0' : '') + number;
+    }
+  
+    function initClock() {
+      updateClock();
+      setInterval(updateClock, 1000);
+    }
+  
+    // Initialize the clock when the page loads
+    window.onload = initClock;
+  </script>
+</div>
+
+
+
+
+
+  
+        </section>
+        <!--Home Section End -->
+
+        <!-- About Section -->
+
+        <section id="about">
+
+            <h1 class="sub-heading">Kelompok 3</h1>
+            <div class="divider"></div>
+            <p class="sub-para">Ketika benar saja salah apalagi pas salah</p>
+
+
+            <div class="about-col">
+
+                <!-- img col -->
+                <div class="img-col">
+                    <img src="img/IMG_5926.JPG" alt="...">
+
+                </div>
+
+                <!-- Information -->
+                <div class="info-col">
+                    <h2></h2>
+                    <p class="sub-para">List Data Kelompok 3</p>
+                    <div class="icon-list-col">
+                        <!-- Left Side List -->
+                        <div class="icon-list">
+                            <ul>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Restu Zuhur</strong> <span>22670141</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Dinar Priambodo Utomo</strong> <span>22670094</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Muhammad Arkhan Taqiuddin</strong> <span>22670097</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>David Suseno</strong> <span>22670098</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- Right Side list -->
+                        <div class="icon-list">
+                            <ul>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Anas Harun Al Rasyid</strong> <span>22670137</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Allawy Umar Maula</strong> <span>22670139</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Krisna Yudha</strong> <span>22670140</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Eka Setyabudi</strong> <span>22670144</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Home Section End -->
+    
+
+    <!-- Facts Section Start-->
+    <section id="fact">
+
+        <h1 class="sub-heading">Roundown Kegiatan</h1>
+        <div class="divider"></div>
+        <p class="sub-para"></p>
+
+        <div class="fact-row">
+
+            <!-- Fact Box -1 -->
+            <div class="fact-box">
+                <i class="fa-solid fa-medal"></i>
+                <strong>~</strong>
+                <p>Kunjungan Industri Pertama</p>
+            </div>
+            
+            <!-- Fact Box -2 -->
+            <div class="fact-box">
+                <i class="fa-regular fa-star"></i>
+                <strong>~</strong>
+                <p>Wisata</p>
+            </div>
+            
+            <!-- Fact Box -3 -->
+            <div class="fact-box">
+                <i class="fa-regular fa-user"></i>
+                <strong>~</strong>
+                <p>Kunjungan Industri Kedua</p>
+            </div>
+            
+            <!-- Fact Box -4 -->
+            <div class="fact-box">
+                <i class="fa-regular fa-thumbs-up"></i>
+                <strong>~</strong>
+                <p>Wisata + Belanja</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Facts Section End-->
+
+    <!-- Skill section Start -->
+    <section id="skill">
+        <h1 class="sub-heading"></h1>
+        <div class="divider"></div>
+        <p class="sub-para"></p>
+
+        <div class="skill-row">
+            <!-- Skill -1 -->
+            <div class="skill-box">
+                <div class="skill-info">
+                    <h2></h2>
+                    <h2></h2>
+                </div>
+                <div class="skill-outter-line">
+                    <div class="skill-inner-line" style="width: 85%;"></div>
+                </div>
+            </div>
+            <!-- Skill -2 -->
+            <div class="skill-box">
+                <div class="skill-info">
+                    <h2></h2>
+                    <h2></h2>
+                </div>
+                <div class="skill-outter-line">
+                    <div class="skill-inner-line" style="width: 80%;"></div>
+                </div>
+            </div>
+            <!-- Skill -3 -->
+            <div class="skill-box">
+                <div class="skill-info">
+                    <h2></h2>
+                    <h2></h2>
+                </div>
+                <div class="skill-outter-line">
+                    <div class="skill-inner-line" style="width: 70%;"></div>
+                </div>
+            </div>
+            <!-- Skill -4 -->
+            <div class="skill-box">
+                <div class="skill-info">
+                    <h2></h2>
+                    <h2></h2>
+                </div>
+                <div class="skill-outter-line">
+                    <div class="skill-inner-line" style="width: 85%;"></div>
+                </div>
+            </div>
+            <!-- Skill -5 -->
+            <div class="skill-box">
+                <div class="skill-info">
+                    <h2></h2>
+                    <h2></h2>
+                </div>
+                <div class="skill-outter-line">
+                    <div class="skill-inner-line" style="width: 75%;"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Skill section End -->
+
+
+    <!-- Resume Section Start -->
+    <section id="resume">
+        <h1 class="sub-heading">Resume</h1>
+        <div class="divider"></div>
+        <p class="sub-para">Kegiatan KKL</p>
+
+        <div class="resume-row">
+            <!-- Left Col -->
+            <div class="resume-cols">
+                <h2>Kunjungan PT Victoria Care</h2>
+                <div class="my-info">
+                    <h3>H1</h3>
+                    <span class="sp-box"></span>
+                    <p>Alur</p>
+                    <ul>
+                        <li>Melihat Pengolahan Limbah</li>
+                        <li>Sesi observasi Produksi Produk</li>
+                        <li>Tanya jawab terkait pengembangan teknologi pada PT</li>
+                    </ul>
+                </div>
+
+                <h2>Wisata</h2>
+                <div class="my-edu">
+                    <h3>H2</h3>
+                    <span class="sp-box"></span>
+                    <p>Alur</p>
+                    <li>Eksplorasi Bloom Garden</li>
+                    <li>Eksplorasi Candi Kuning</li>
+                    <li>Eksplorasi Joger Luwus</li>
+                    <li>Eksplorasi Pantai Kuta</li>
+
+                </div>
+
+
+            </div>
+
+            <!-- Right Col -->
+            <div class="resume-cols">
+
+                <h2>Kunjungan BDID</h2>
+                <div class="pro-exp">
+                    <h3> H3 </h3>
+                    <span class="sp-box"></span>
+                    <p>Alur</p>
+                    <ul>
+                        <li>Kunjungan Balai Diklat Industri Denpasar</li>
+                        <li>Eksplorasi Pantai Melasti</li>
+                        <li>Eksplorasi GWK</li>
+                        <li>Makrab di Pantai Jimbaran</li>
+                    </ul>
+                </div>
+
+                <div class="pro-exp">
+                    <h2> Belanja</h2>
+                    <h3>H4</h3>
+                    <span class="sp-box"></span>
+                    <p>Alur</p>
+                    <ul>
+                        <li>Eksplorasi Pasar Seni Sukowati</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                  
+            </div>
+
+        </div>
+
+    </section>
+ 
+
+
+    <!-- Resume Section End -->
+    <!------------------------------------->
+
+
+    <!-- Portofolio Section Start-->
+
+    <section id="portofolio">
+       
+        <h1 class="sub-heading">Dokumentasi Kunjungan</h1>
+        <div class="divider"></div>
+        <p>H1-H4</p>
+
+        <div class="port-row">
+            <!-- Portofolio Item -1 -->
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/IMG_5539.JPG" alt="...">
+                </div>
+                <div class="port-info">
+                    <h4></h4>
+                    <p>PT Victoria Care Indonesia 
+                        
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Portofolio Item -2 -->
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/IMG_5778.JPG" alt="...">
+                </div>
+                <div class="port-info">
+                    <h4></h4>
+                    <p>The Bloom Garden</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Portofolio Item -3 -->
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/IMG_7450.JPG" alt="...">
+                </div>
+                <div class="port-info">
+                    <h4></h4>
+                    <p>Candi Kuninig</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Portofolio Item -4 -->
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/2023-06-03.jpg" alt="..">
+                </div>
+                <div class="port-info">
+                    <h4></h4>
+                    <p>Joger Luwus</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Portofolio Item -5 -->
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/1267593_400.jpg" alt="..">
+                </div>
+                <div class="port-info">
+                    <h4></h4>
+                    <p>Pantai Kuta</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Portofolio Item -6 -->
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/IMG_6090.JPG" alt="..">
+                </div>
+                <div class="port-info">
+                    <h4></h4>
+                    <p>Balai Diklat Industri Denpasar</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        
+
+    </section>
+    
+    
+    <!-- Portofolio Section End-->
+
+    <!--------------------->
+
+    <!-- Services Section Start -->
+
+    <section id="service">
+        <h1 class="sub-heading">Terkait Kunjungan Industri</h1>
+        <div class="divider"></div>
+        <p class="sub-para">PT Victoria Care Indonesia Dan Balai Diklat Industri Denpasar</p>
+
+        <div class="service-row">
+
+            <!-- Service -1 -->
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="ser-info">
+                    <h4>PT Victoria Care Indonesia</h4>
+                    <p>PT. VICTORIA CARE INDONESIA adalah perusahaan manufakturing dan distribusi yang bergerak di bidang kosmetik, toiletris dan perawatan kesehatan yang telah berdiri sejak tahun 2006, dengan memiliki cabang di Pulau Jawa dan Pulau Bali serta cakupan distribusisi secara nasional di seluruh Indonesia.</p>
+
+                </div>
+            </div>
+
+            <!-- Service -2 -->
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fa-solid fa-diamond"></i>
+                </div>
+                <div class="ser-info">
+                    <h4></h4>
+                    <p> <br></p>
+            
+                </div>
+             </div>
+
+            <!-- Service -3 -->
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="ser-info">
+                    <h4>Balai Diklat Industri Denpasar </h4>
+                    <p>Balai Diklat Industri (BDI) Denpasar adalah unit pelaksana teknis (UPT) di bawah Kementerian Perindustrian yang menyelenggarakan pelatihan bagi SDM industri. BDI Denpasar memiliki beberapa program, di antaranya: Diklat animasi, Inkubator bisnis, Makerspace, Program inklusif untuk penyandang disabilitas, Pelatihan pemberdayaan masyarakat. 
+                        
+                    </p>
+                </div>
+            </div>
+            <!-- Service -4 -->
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fa-solid fa-binoculars"></i>
+                </div>
+                <div class="ser-info">
+                    <h4></h4>
+                    <p></p>
+                </div>
+             </div>
+             <!-- Service -5 -->
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fa-solid fa-motorcycle"></i>
+                </div>
+                <div class="ser-info">
+                    <h4></h4>
+                    <p></p>
+                </div>
+            </div>
+             <!-- Service -6 -->
+             <div class="service-box">
+                 <div class="icon">
+                      <i class="fa-brands fa-slack"></i>
+                 </div>
+                 <div class="ser-info">
+                      <h4></h4>
+                      <p></p>
+                 </div>
+            </div>
+       
+        </div>
+
+    </section>
+    <!-- Service Section End-->
+
+    <!-- Contact Section Start -->
+    <section id="contact">
+
+        <h1 class="sub-heading">Contact</h1>
+        <div class="divider"></div>
+        <p>Nek utang penting dibayar</p>
+
+        <div class="contact-row">
+
+            <!-- Left Col -->
+            <div class="contact-left">
+
+                <!-- Email Box -->
+                <div class="icon-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="info">
+                        <h4>Email:</h4>
+                        <p>skyrestu9@gmail.com</p>
+                    </div>
+                </div>
+                <!-- Call Box -->
+                <div class="icon-box">
+                     <div class="icon">
+                          <i class="fa-solid fa-phone"></i>
+                     </div>
+                     <div class="info">
+                          <h4>Call:</h4>
+                          <p>0812 2888 4132</p>
+                     </div>
+                </div>
+                <!-- Location Box -->
+                <div class="icon-box">
+                     <div class="icon">
+                          <i class="fa-solid fa-location-dot"></i>
+                     </div>
+                     <div class="info">
+                          <h4>Lokasi:</h4>
+                          <p>Singorojo, Kendal, Jawa Tengah</p>
+                     </div>
+                </div>
+
+                <!-- Map -->
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126692.87852993004!2d110.20924445!3d-7.10832455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70645ec5565e55%3A0x4027a76e3530610!2sKec.%20Singorojo%2C%20Kabupaten%20Kendal%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1704653313320!5m2!1sid!2sid" width="100%" height="250" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+
+            <!-- Right Col-->
+            <div class="contact-right">
+
+                <form action="">
+
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <textarea name="msg" id="msg" rows="9" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message">
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Contact Section End -->
+
+
+
+    </main>
+
+
+    <!-- Typed.JS File (for typing effect)-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- JS File -->
+    <script src="script.js"></script>
+    <!-- Font Awesome JS File -->
+    <script src="https://kit.fontawesome.com/aa5f332820.js" crossorigin="anonymous"></script>
+
+
+    
+</body>
+</html>
